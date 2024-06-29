@@ -111,7 +111,7 @@ public class Main {
     private static void listProprietarios() {
         List<Proprietario> proprietarios = proprietarioController.getAllProprietarios();
         for (Proprietario proprietario : proprietarios) {
-            System.out.println(proprietario);
+            System.out.println(proprietario.getNome());
         }
     }
 
@@ -218,7 +218,7 @@ public class Main {
     private static void listAnimais() {
         List<Animal> animais = animalController.getAllAnimais();
         for (Animal animal : animais) {
-            System.out.println(animal);
+            System.out.println(animal.getNome());
         }
     }
 
@@ -312,7 +312,7 @@ public class Main {
     private static void listCadastroServicos() {
         List<CadastroServico> servicos = cadastroServicoController.getAllCadastroServicos();
         for (CadastroServico servico : servicos) {
-            System.out.println(servico);
+            System.out.println(servico.getNome());
         }
     }
 
@@ -400,7 +400,7 @@ public class Main {
     private static void listServicos() {
         List<Servico> servicos = servicoController.getAllServicos();
         for (Servico servico : servicos) {
-            System.out.println(servico);
+            System.out.println(servico.getIdServico());
         }
     }
 
